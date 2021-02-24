@@ -3,6 +3,5 @@ public abstract class Product {
     String company;
     int price;
     boolean answer;
-     public void ganvadeba();
 
 }
