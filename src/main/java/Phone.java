@@ -17,7 +17,5 @@ public class Phone extends Product{
  public void setModelname(int modelname) {
   this.modelname = modelname;
  }
- public  void print(){
 
- }
 }
