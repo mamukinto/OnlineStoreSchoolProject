@@ -1,4 +1,4 @@
-package Models;
+package model;
 
 public abstract class Product {
     private String Brand;

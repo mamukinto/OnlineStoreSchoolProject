@@ -1,6 +1,4 @@
-package Models;
-
-import Models.Product;
+package model;
 
 public class Computer extends Product {
     private String WebCamera;

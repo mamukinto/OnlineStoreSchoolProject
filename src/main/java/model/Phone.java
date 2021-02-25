@@ -1,6 +1,4 @@
-package Models;
-
-import Models.Product;
+package model;
 
 public class Phone extends Product {
   private String modelName;
