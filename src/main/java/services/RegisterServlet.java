@@ -1,8 +1,8 @@
 package services;
 
 import model.User;
-import services.dao.UserDAO;
-import services.dao.UserDAOImpl;
+//import services.dao.UserDAO;
+//import services.dao.UserDAOImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,9 +20,10 @@ public class RegisterServlet extends HttpServlet {
         String number = req.getParameter("number");
         String password = req.getParameter("password");
 
-        User newUser = new User(username,lastName,password,number,email," ");
+        User newUser = new User(username,lastName,number," ",email,password);
+        System.out.println(newUser);
 
-        UserDAO userDAO = new UserDAOImpl();
-        userDAO.addUser(newUser);
+//        UserDAO userDAO = new UserDAOImpl();
+//        userDAO.addUser(newUser);
     }
 }

@@ -1,6 +1,8 @@
 package services;
 
 import model.User;
+import services.dao.UserDAO;
+import services.dao.UserDAOImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,10 +16,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 @WebServlet("/loginServlet")
 public class LoginServlet extends HttpServlet {
-    //        [TODO] ეს უნდა მუშაობდეს
             List<User> users = new ArrayList<>();
-    //        UserDAO userDAO = new UserDAOImpl();
-    //        users = userDAO.getUsers();
+            UserDAO userDAO = new UserDAOImpl();
+//            users = userDAO.getUsers();
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
