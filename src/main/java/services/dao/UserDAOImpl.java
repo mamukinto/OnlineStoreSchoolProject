@@ -1,15 +1,14 @@
-package services.Dao;
+package services.dao;
 
 import model.User;
-import services.Dao.userDao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class userDaoImpl implements userDao {
+public class UserDAOImpl implements UserDAO {
     @Override
-    public void addUsers(User user) {
+    public void addUser(User user) {
         EntityManagerFactory entityManagerFactory= Persistence.createEntityManagerFactory("myschema");
         EntityManager entityManager=entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
