@@ -1,11 +1,10 @@
 package services;
 
 import model.User;
-import model.userDao;
-import model.userDaoImpl;
+import services.Dao.userDao;
+import services.Dao.userDaoImpl;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

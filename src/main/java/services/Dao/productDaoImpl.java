@@ -1,11 +1,16 @@
-package model;
+package services.Dao;
+
+import model.Computer;
+import model.Phone;
+import model.TV;
+import services.Dao.productDao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.util.List;
 
-public class productDaoImpl implements productDao{
+public class productDaoImpl implements productDao {
     @Override
     public void addPhone(Phone phone) {
         EntityManagerFactory entityManagerFactory= Persistence.createEntityManagerFactory("myschema");

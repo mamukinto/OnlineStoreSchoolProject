@@ -1,4 +1,8 @@
-package model;
+package services.Dao;
+
+import model.Computer;
+import model.Phone;
+import model.TV;
 
 import java.util.List;
 
