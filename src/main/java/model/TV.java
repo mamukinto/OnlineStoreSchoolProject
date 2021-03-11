@@ -1,5 +1,10 @@
 package model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="TV")
 public class TV extends Product {
     private String ScreenSize;
     private String ScreenResolution;

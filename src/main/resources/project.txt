@@ -1,0 +1,64 @@
+Mysql code
+
+CREATE TABLE `myschema`.`users` (
+  `id` INT NOT NULL,
+  `firstname` VARCHAR(45) NOT NULL,
+  `lastname` VARCHAR(45) NOT NULL,
+  `phonenumber` VARCHAR(45) NOT NULL,
+  `address` VARCHAR(45) NOT NULL,
+  `username` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE,
+  PRIMARY KEY (`id`, `firstname`, `lastname`, `phonenumber`, `address`, `username`, `password`));
+
+CREATE TABLE `myschema`.`phones` (
+  `id` INT NOT NULL,
+  `Brand` VARCHAR(45) NOT NULL,
+  `Model` VARCHAR(45) NOT NULL,
+  `Color` VARCHAR(45) NOT NULL,
+  `OperatingSystem` VARCHAR(45) NOT NULL,
+  `Weight` VARCHAR(45) NOT NULL,
+  `Warranty` VARCHAR(45) NOT NULL,
+  `RAM` VARCHAR(45) NOT NULL,
+  `Price` VARCHAR(45) NOT NULL,
+  `modelName` VARCHAR(45) NOT NULL,
+  `simType` VARCHAR(45) NOT NULL,
+  `DualSim` VARCHAR(45) NOT NULL,
+  `WIFI` VARCHAR(45) NOT NULL,
+  `Bluetooth` VARCHAR(45) NOT NULL,
+  `GPS` VARCHAR(45) NOT NULL,
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE,
+  PRIMARY KEY (`id`, `Brand`, `Model`, `Color`, `OperatingSystem`, `Weight`, `Warranty`, `RAM`, `Price`, `modelName`, `simType`, `DualSim`, `WIFI`, `Bluetooth`, `GPS`));
+
+CREATE TABLE `myschema`.`tv` (
+  `id` INT NOT NULL,
+  `Brand` VARCHAR(45) NOT NULL,
+  `Model` VARCHAR(45) NOT NULL,
+  `Color` VARCHAR(45) NOT NULL,
+  `OperatingSystem` VARCHAR(45) NOT NULL,
+  `weight` INT NOT NULL,
+  `Warranty` INT NOT NULL,
+  `RAM` VARCHAR(45) NOT NULL,
+  `Price` INT NOT NULL,
+  `ScreenSize` VARCHAR(45) NOT NULL,
+  `ScreenResolution` VARCHAR(45) NOT NULL,
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE,
+  PRIMARY KEY (`id`, `Brand`, `Model`, `Color`, `OperatingSystem`, `weight`, `Warranty`, `RAM`, `Price`, `ScreenSize`, `ScreenResolution`));
+
+CREATE TABLE `myschema`.`computers` (
+  `id` INT NOT NULL,
+  `Brand` VARCHAR(45) NOT NULL,
+  `Model` VARCHAR(45) NOT NULL,
+  `Color` VARCHAR(45) NOT NULL,
+  `OperatingSystem` VARCHAR(45) NOT NULL,
+  `Weight` INT NOT NULL,
+  `Warranty` VARCHAR(45) NOT NULL,
+  `RAM` VARCHAR(45) NOT NULL,
+  `Price` INT NOT NULL,
+  `WebCamera` VARCHAR(45) NOT NULL,
+  `WIFI` VARCHAR(45) NOT NULL,
+  `TypeOfProcessor` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`, `Brand`, `Model`, `Color`, `OperatingSystem`, `Weight`, `Warranty`, `RAM`, `Price`, `WebCamera`, `WIFI`, `TypeOfProcessor`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
+
+

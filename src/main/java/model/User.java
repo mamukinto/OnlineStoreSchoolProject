@@ -1,40 +1,31 @@
 package model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name="users")
 public class User {
+
     private String firstName;
     private String lastName;
-    private String password;
     private String phoneNumber;
-    private String email;
     private String address;
+    @Id
+    private String email;
+    private String password;
 
     public User() {
     }
 
-    public User(String firstName, String lastName, String password, String phoneNumber, String email, String address) {
+    public User(String firstName, String lastName, String phoneNumber, String address,String email,String password) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.password = password;
         this.phoneNumber = phoneNumber;
-        this.email = email;
         this.address = address;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+        this.email=email;
+        this.password=password;
     }
 
     public String getFirstName() {
@@ -69,6 +60,13 @@ public class User {
         this.address = address;
     }
 
+    public String getEmail() { return email; }
+
+    public void setEmail(String email) { this.email = email; }
+
+    public String getPassword() { return password; }
+
+    public void setPassword(String password) { this.password = password; }
 
     @Override
     public String toString() {
