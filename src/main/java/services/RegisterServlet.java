@@ -23,7 +23,8 @@ public class RegisterServlet extends HttpServlet {
         User newUser = new User(username,lastName,number," ",email,password);
         System.out.println(newUser);
 
-//        UserDAO userDAO = new UserDAOImpl();
-//        userDAO.addUser(newUser);
+        UserDAO userDAO = new UserDAOImpl();
+        System.out.println("movida");
+        userDAO.addUser(newUser);
     }
 }
