@@ -17,7 +17,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 @WebServlet("/loginServlet")
 public class LoginServlet extends HttpServlet {
             List<User> users = new ArrayList<>();
-            UserDAO userDAO = new UserDAOImpl();
+//            UserDAO userDAO = new UserDAOImpl();
 //            users = userDAO.getUsers();
 
     @Override
@@ -35,6 +35,8 @@ public class LoginServlet extends HttpServlet {
                     }
                 }
             });
+        } else {
+            System.out.println("Wrong Email!");
         }
 
 

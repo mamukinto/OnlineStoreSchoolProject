@@ -1,8 +1,8 @@
 package services;
 
 import model.User;
-//import services.dao.UserDAO;
-//import services.dao.UserDAOImpl;
+import services.dao.UserDAO;
+import services.dao.UserDAOImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
